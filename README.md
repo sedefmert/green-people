@@ -17,7 +17,7 @@ setup/prepare_payloads.py    builds wiki_S / wiki_L, manifest.json, SHA-256 list
 setup/record_environment.sh  record hardware/software versions of the Pi
 sink/sink.py                 TCP sink: counts and discards bytes, replies with the count, logs JSONL
 sink/run_sink_gl2.sh         starts sink, session-long EnergiBridge on gl2 (tmux)
-relay/start_relay.sh         laptop relay, laptop:5000 -> gl2:5000 (auto-reconnect)
+relay/start_relay.sh         laptop relay, pi:5001 -> laptop:5001, laptop:5000 -> gl2:5000 (auto-reconnect)
 relay/local_sink.sh          fallback sink on the laptop (only if the relay is too slow)
 power/power_server.py       laptop: polls the Shelly per run, stores the power trace, clock-sync endpoint
 experiment/RunnerConfig.py   Experiment Runner config: run table + hooks
@@ -38,7 +38,7 @@ data/                        everything produced by the session
 On the laptop:
 
 ```bash
-git clone <team-repo-url> greenwarriors && cd greenwarriors
+git clone <repo-url> greenwarriors-replication-package && cd greenwarriors-replication-package
 ```
 
 Edit `config/experiment.env`: `SINK_HOST` and `POWER_HOST` (both the laptop's IP and Port on the access point), `SHELLY_HOST` (the plug's IP), `PAYLOAD_ROOT` on the Pi, and `JUMP_HOST`, `JUMP_USER`, `GL2_HOST`, `GL2_USER`, `SSH_KEY` of the Green Lab server.
@@ -235,7 +235,7 @@ scp -O <server_hostname>:~/greenwarriors/gl2_logs/ data/gl2/
 
 Stop the gl2 side with `tmux kill-session -t gw_sink`.
 
-## Step 14 - Analysis
+## Step 14 - Data Analysis
 
 ```bash
 pip install -r analysis/requirements.txt
