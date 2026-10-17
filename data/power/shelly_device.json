@@ -1,0 +1,64 @@
+{
+  "device_info": {
+    "name": null,
+    "id": "shellyplusplugs-e465b85da274",
+    "mac": "E465B85DA274",
+    "slot": 1,
+    "model": "SNPL-00112EU",
+    "gen": 2,
+    "fw_id": "20231031-152250/1.0.7-g5db02bd",
+    "ver": "1.0.7",
+    "app": "PlusPlugS",
+    "auth_en": false,
+    "auth_domain": null
+  },
+  "recorded_utc": "2026-10-16T20:09:13Z",
+  "switch_config": {
+    "id": 0,
+    "name": null,
+    "initial_state": "off",
+    "auto_on": false,
+    "auto_on_delay": 60.0,
+    "auto_off": false,
+    "auto_off_delay": 60.0,
+    "power_limit": 2500,
+    "voltage_limit": 280,
+    "current_limit": 12.0
+  },
+  "sys_config": {
+    "device": {
+      "name": null,
+      "mac": "E465B85DA274",
+      "fw_id": "20231031-152250/1.0.7-g5db02bd",
+      "discoverable": true,
+      "eco_mode": false
+    },
+    "location": {
+      "tz": null,
+      "lat": null,
+      "lon": null
+    },
+    "debug": {
+      "level": 2,
+      "file_level": null,
+      "mqtt": {
+        "enable": false
+      },
+      "websocket": {
+        "enable": false
+      },
+      "udp": {
+        "addr": null
+      }
+    },
+    "ui_data": {},
+    "rpc_udp": {
+      "dst_addr": null,
+      "listen_port": null
+    },
+    "sntp": {
+      "server": "time.google.com"
+    },
+    "cfg_rev": 11
+  }
+}

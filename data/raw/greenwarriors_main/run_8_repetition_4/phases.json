@@ -1,0 +1,79 @@
+{
+  "treatment": "tar.br",
+  "payload": "S",
+  "simulated": false,
+  "idle_trim_s": 5.0,
+  "payload_bytes": 426149194,
+  "expected_baseline_bytes": 426158080,
+  "wall": {
+    "idle_start": 1792158407.1371439,
+    "idle_end": 1792158467.137303,
+    "compress_start": 1792158467.1378753,
+    "compress_end": 1792160951.3278894,
+    "transmit_start": 1792160951.328389,
+    "transmit_end": 1792160966.9273112
+  },
+  "idle_start": 53377.503692085,
+  "idle_end": 53437.503847396,
+  "compress_start": 53437.504424274,
+  "compress_end": 55921.694397789,
+  "rusage_compress_s": 2475.785892,
+  "compress_rc": 0,
+  "compress_stderr": "",
+  "archive_bytes": 96866385,
+  "tx_bytes_before": 12734169264,
+  "transmit_start": 55921.694938969,
+  "transmit_end": 55937.293858766,
+  "rusage_transmit_s": 0.2539799999999559,
+  "tx_bytes_after": 12835460953,
+  "transmit_rc": 0,
+  "transmit_stderr": "",
+  "sink_conn_id": 81,
+  "sink_bytes": 96866385,
+  "commands": {
+    "compress": "tar -cf - {dir} | brotli -c > {archive}",
+    "send": "nc -N 192.168.178.170 5001 < /dev/shm/a.tar.br"
+  },
+  "throttling_problem": false,
+  "probe_before": {
+    "temp_c": 52.5,
+    "throttled": 327680,
+    "rssi_dbm": -46.0,
+    "tx_bitrate_mbps": 433.3,
+    "freq_mhz": 5220.0
+  },
+  "probe_after": {
+    "temp_c": 59.9,
+    "throttled": 327680,
+    "rssi_dbm": -46.0,
+    "tx_bitrate_mbps": 433.3,
+    "freq_mhz": 5220.0
+  },
+  "clock_base": 1792105029.633447,
+  "sync_pre": {
+    "offset_s": 0.0009922981262207031,
+    "rtt_s": 0.01534891128540039,
+    "t_pi": 1792158406.5785959
+  },
+  "sync_post": {
+    "offset_s": 0.002206087112426758,
+    "rtt_s": 0.01522684097290039,
+    "t_pi": 1792160970.606618
+  },
+  "power": {
+    "ok": true,
+    "run_id": "main__run_8_repetition_4",
+    "backend": "shelly",
+    "device": "SNPL-00112EU shellyplusplugs-e465b85da274 fw 1.0.7",
+    "n_samples": 12820,
+    "max_gap_s": 0.3298814296722412,
+    "t_first": 1792158406.6382742,
+    "t_last": 1792160970.4792686,
+    "mean_power_w": 3.917474348120803,
+    "poll_errors": 0,
+    "poll_hz": 5.0,
+    "shelly_gen": 2
+  },
+  "power_lag_s": 1.771,
+  "power_run_key": "main__run_8_repetition_4"
+}

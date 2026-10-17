@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "run_id": "pilot__clock_check_20261015_134143",
+  "backend": "shelly",
+  "device": "SNPL-00112EU shellyplusplugs-e465b85da274 fw 1.0.7",
+  "n_samples": 597,
+  "max_gap_s": 0.21242189407348633,
+  "t_first": 1792064504.534648,
+  "t_last": 1792064623.798874,
+  "mean_power_w": 4.075782702899196,
+  "poll_errors": 0,
+  "poll_hz": 5.0,
+  "shelly_gen": 2
+}

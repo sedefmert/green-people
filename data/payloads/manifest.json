@@ -1,0 +1,22 @@
+{
+  "created_wall": 1792045173.62332,
+  "source": "/home/greenwarriors/dataset_raw",
+  "exclude": [],
+  "small_target_mb": 50.0,
+  "payloads": {
+    "S": {
+      "dir": "wiki_S",
+      "n_files": 1,
+      "total_bytes": 426149194,
+      "sha256_aggregate": "4a28d8ddf262446ed953ef868751d75031814f88dae29c939957813ec9394f1e",
+      "tar_stream_bytes": 426158080
+    },
+    "L": {
+      "dir": "wiki_L",
+      "n_files": 1,
+      "total_bytes": 426149194,
+      "sha256_aggregate": "56c68049f79bf15f51843aa3d549b3439ab4a0b7e5378bd63daf4695d3fc4659",
+      "tar_stream_bytes": 426158080
+    }
+  }
+}

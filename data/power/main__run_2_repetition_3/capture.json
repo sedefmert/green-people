@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "run_id": "main__run_2_repetition_3",
+  "backend": "shelly",
+  "device": "SNPL-00112EU shellyplusplugs-e465b85da274 fw 1.0.7",
+  "n_samples": 700,
+  "max_gap_s": 1.3874471187591553,
+  "t_first": 1792161617.2905335,
+  "t_last": 1792161757.267427,
+  "mean_power_w": 3.247994482573906,
+  "poll_errors": 0,
+  "poll_hz": 5.0,
+  "shelly_gen": 2
+}

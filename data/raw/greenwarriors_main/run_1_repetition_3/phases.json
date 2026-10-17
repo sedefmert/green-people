@@ -1,0 +1,73 @@
+{
+  "treatment": "none",
+  "payload": "L",
+  "simulated": false,
+  "idle_trim_s": 5.0,
+  "payload_bytes": 426149194,
+  "expected_baseline_bytes": 426158080,
+  "wall": {
+    "idle_start": 1792134727.1344492,
+    "idle_end": 1792134787.1345747,
+    "transmit_start": 1792134787.135548,
+    "transmit_end": 1792134832.9556751
+  },
+  "idle_start": 29697.50099802,
+  "idle_end": 29757.501119543,
+  "compress_start": null,
+  "compress_end": null,
+  "tx_bytes_before": 7594226370,
+  "transmit_start": 29757.502096458,
+  "transmit_end": 29803.322222257,
+  "rusage_transmit_s": 3.8114539999999995,
+  "tx_bytes_after": 8039831748,
+  "transmit_rc": 0,
+  "transmit_stderr": "",
+  "sink_conn_id": 54,
+  "sink_bytes": 426158080,
+  "commands": {
+    "compress": null,
+    "send": "tar -cf - wiki_L | nc -N 192.168.178.170 5001"
+  },
+  "throttling_problem": false,
+  "probe_before": {
+    "temp_c": 53.0,
+    "throttled": 327680,
+    "rssi_dbm": -55.0,
+    "tx_bitrate_mbps": 24.0,
+    "freq_mhz": 5220.0
+  },
+  "probe_after": {
+    "temp_c": 54.5,
+    "throttled": 327680,
+    "rssi_dbm": -53.0,
+    "tx_bitrate_mbps": 433.3,
+    "freq_mhz": 5220.0
+  },
+  "clock_base": 1792105029.633447,
+  "sync_pre": {
+    "offset_s": 0.001691579818725586,
+    "rtt_s": 0.015069246292114258,
+    "t_pi": 1792134726.1787834
+  },
+  "sync_post": {
+    "offset_s": 0.0021855831146240234,
+    "rtt_s": 0.01540684700012207,
+    "t_pi": 1792134836.2716012
+  },
+  "power": {
+    "ok": true,
+    "run_id": "main__run_1_repetition_3",
+    "backend": "shelly",
+    "device": "SNPL-00112EU shellyplusplugs-e465b85da274 fw 1.0.7",
+    "n_samples": 548,
+    "max_gap_s": 0.22108888626098633,
+    "t_first": 1792134726.642632,
+    "t_last": 1792134836.225439,
+    "mean_power_w": 3.0334015629301683,
+    "poll_errors": 0,
+    "poll_hz": 5.0,
+    "shelly_gen": 2
+  },
+  "power_lag_s": 1.771,
+  "power_run_key": "main__run_1_repetition_3"
+}

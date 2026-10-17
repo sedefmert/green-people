@@ -1,0 +1,12 @@
+sink listening on 127.0.0.1:5000, log=/home/gl_greenwarriors/greenwarriors/gl2_logs/sink_log.jsonl
+conn 1: 0 bytes, 0.0 Mbit/s, error: [Errno 107] Transport endpoint is not connected
+conn 2: 0 bytes, 0.0 Mbit/s, ok
+conn 3: 0 bytes, 0.0 Mbit/s, ok
+conn 4: 142088070 bytes, 67.9 Mbit/s, ok
+conn 5: 0 bytes, 0.0 Mbit/s, ok
+conn 6: 0 bytes, 0.0 Mbit/s, ok
+conn 7: 0 bytes, 0.0 Mbit/s, ok
+conn 8: 96866326 bytes, 60.7 Mbit/s, ok
+conn 9: 136530316 bytes, 81.6 Mbit/s, ok
+conn 10: 142089514 bytes, 64.1 Mbit/s, ok
+conn 11: 426158080 bytes, 77.5 Mbit/s, ok
