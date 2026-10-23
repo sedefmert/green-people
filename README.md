@@ -1,5 +1,7 @@
 # GreenWarriors: Energy efficiency of data compression on a Raspberry Pi 4
 
+![Experiment connection and measurement path](assets/experiment-architecture.svg)
+
 Replication package for *Energy efficiency of Data Compression Algorithms*.
 
 Four components take part in this experiment. 
@@ -33,7 +35,7 @@ analysis/gl2_energy.py       supplementary gl2 energy per run
 data/                        everything produced by the session
 ```
 
-## Step 1 - Clone the repository and fill the configuration
+## Step 1 - Get the repository and fill in the configuration
 
 On the laptop:
 
@@ -45,8 +47,8 @@ Edit `config/experiment.env`: `SINK_HOST` and `POWER_HOST` (both the laptop's IP
 
 ## Step 2 - Shelly plug and power server (once)
 
-1. **Put the plug on the network.** connect to its AP and then open its web page (`http://192.168.33.1`). Now connect it to the dedicated access point. Give it a fixed IP, switch off Shelly Cloud and Bluetooth in its settings, and update the firmware once. When the `power/power_server.py` starts it saves the plug's model, firmware and settings to `data/power/shelly_device.json` for the replication package.
-2. **Wire it:** Directly connect: wall socket -> Shelly -> official Pi power supply -> Pi. Nothing else in between.
+1. **Put the plug on the network.** then open its web page (`http://192.168.33.1`). Connect it to the dedicated access point. Give it a fixed IP, switch off Shelly Cloud and Bluetooth in its settings, and update the firmware once. When the `power/power_server.py` starts it saves the plug's model, firmware and settings to `data/power/shelly_device.json` for the replication package.
+2. **Wire it:** Directly connect: wall socket -> Shelly -> official Pi power supply -> Pi. Nothing else between.
 3. **Test it from the laptop** 
 
 ```bash
@@ -102,7 +104,7 @@ bash setup/record_environment.sh
 
 `manifest.json` records per payload the file count, total bytes, an aggregate SHA-256, and `tar_stream_bytes`, the size of `tar -cf - DIR`, which is the expected byte count for the baseline. Experiment Runner re-verifies the checksums at the start of every session. Copy `manifest.json` and the two `.sha256` files into `data/payloads/`.
 
-## Step 5 - Network (Optional: Required If not done during setting up Raspberry Pi OS)
+## Step 5 - Network
 
 Configure the dedicated access point as an isolated network Place the Pi 2m from the AP with line of sight and do not move either during the session.
 
